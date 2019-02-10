@@ -6,14 +6,22 @@
 </head>
 <body>
 
-	<p>Uncomment the last line of code to see the output</p>
-	<button type="button" name="button" id="btn">Click me</button>
-
 	<script src="bubble-sort.js"></script>
 	<script src="selection-sort.js"></script>
 	<script src="insertion-sort.js"></script>
 	<script src="merge-sort.js"></script>
 	<script src="quick-sort.js"></script>
 	<script src="heap-sort.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			
+			// bubble sort
+			const bubbleSorting = bubbleSort([12, 11, 7, 13, 14, 16, 2, 22, 4]);
+			console.log(`Bubble sorted array: ${bubbleSorting}`);
+
+		
+		});
+	</script>
 </body>
 </html>
