@@ -12,6 +12,7 @@
 	<script src="merge-sort.js"></script>
 	<script src="quick-sort.js"></script>
 	<script src="heap-sort.js"></script>
+	<script src="shellsort.js"></script>
 
 	<script>
 		document.addEventListener("DOMContentLoaded", () => {
@@ -39,6 +40,10 @@
 			// selection sort
 			const selectionSortArr = selectionSort2([12, 11, 7, 13, 14, 16, 2, 22]);
 			console.log(`Selection sorted array: ${selectionSortArr}`);
+
+			// shellsort
+			const shellSorted = shellSort([12, 11, 7, 13, 14, 16, 2, 22]);
+			console.log(`Shellsorted array: ${shellSorted}`);
 		
 		});
 	</script>
