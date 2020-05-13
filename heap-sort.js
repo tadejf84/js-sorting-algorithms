@@ -9,6 +9,9 @@ function heapSort(arr) {
     const len = arr.length;
     let last = len - 1;
 
+    // If only one element in the array
+    if (arr.length < 2) return arr;
+
     // 1. Build a max heap from the array
     buildMaxHeap(arr, len);
 
