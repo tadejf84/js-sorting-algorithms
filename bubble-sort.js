@@ -6,6 +6,10 @@
  * @returns {array} arr - sorted
  */
 function bubbleSort(arr){
+
+    // If only one element in the array
+    if (arr.length < 2) return arr;
+
     for (let i = arr.length - 1; i >= 0; i--){
         for(let j = 0; j <= i; j++) {
             if(arr[j-1] > arr[j]) {
