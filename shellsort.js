@@ -1,9 +1,13 @@
-/*
-* shell sort algorithm
-*/
+/**
+ * Shell sort algorithm
+ * 
+ * @param {array} arr - random
+ * 
+ * @returns {array} arr - sorted
+ */
 function shellSort(arr) {
 
-    // define initial gap
+    // Define initial gap
     let gap = arr.length / 2;
 
     while (gap > 0) {
@@ -13,19 +17,24 @@ function shellSort(arr) {
             }
         }
         
-        // compute new gap value
+        // Compute new gap value
         gap = parseInt( (gap - 1) / 3 );
     }
+    
     return arr;
 }
 
 
-/*
-* helper function swap
-*/
-function swap(arr, i, j) {
-    let temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
-  }
+/**
+ * Swap two elements in array
+ * 
+ * @param {arr} arr 
+ * @param {number} a
+ * @param {number} b 
+ */
+function swap(arr, a, b) {
+    let temp = arr[a];
+    arr[a] = arr[b];
+    arr[b] = temp;
+}
   
