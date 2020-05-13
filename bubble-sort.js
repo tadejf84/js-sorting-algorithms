@@ -1,24 +1,33 @@
-/*
-* array bubble sorting algorithm
-*/
+/**
+ * Bubble sort algorithm
+ * 
+ * @param {array} arr - random
+ * 
+ * @returns {array} arr - sorted
+ */
 function bubbleSort(arr){
-  const len = arr.length;
-
-  for (let i = len - 1; i >= 0; i--){
-    for(let j = 0; j <= i; j++) {
-      if(arr[j-1] > arr[j]) {
-        swap(arr, j-1, j);
-      }
+    for (let i = arr.length - 1; i >= 0; i--){
+        for(let j = 0; j <= i; j++) {
+            if(arr[j-1] > arr[j]) {
+                swap(arr, j-1, j);
+            }
+        }
     }
-  }
 
-  return arr;
+    return arr;
 }
 
-// helper function to swap elements
+
+/**
+ * Swap two elements in array
+ * 
+ * @param {arr} arr 
+ * @param {number} a 
+ * @param {number} b 
+ */
 function swap(arr, a, b) {
-  let temp = arr[a];
-  arr[a] = arr[b];
-  arr[b] = temp;
+    let temp = arr[a];
+    arr[a] = arr[b];
+    arr[b] = temp;
 }
 
