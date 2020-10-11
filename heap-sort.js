@@ -71,7 +71,6 @@ function heapify(heap, i, len) {
     }
 }
 
-
 /**
  * Swap two elements in array
  * 
