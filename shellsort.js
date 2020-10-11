@@ -24,7 +24,6 @@ function shellSort(arr) {
     return arr;
 }
 
-
 /**
  * Swap two elements in array
  * 
