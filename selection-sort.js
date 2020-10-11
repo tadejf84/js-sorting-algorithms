@@ -21,7 +21,6 @@ function selectionSort1(arr){
     return arr;
 }
 
-
 /**
  * Selection sort - recursive
  * 
@@ -48,7 +47,6 @@ function selectionSort2(arr, startIndex) {
 
     return arr;
 }
-
 
 /**
  * Swap two elements in array
