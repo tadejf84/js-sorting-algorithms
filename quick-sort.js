@@ -50,7 +50,6 @@ function quickSort(arr, left, right){
     return arr;
 }
 
-
 /**
  * Swap two elements in array
  * 
