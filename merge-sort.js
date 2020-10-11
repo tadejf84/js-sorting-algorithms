@@ -20,7 +20,6 @@ function mergeSort (arr) {
     return merge(mergeSort(left), mergeSort(right));
 }
 
-
 /**
  * Merge left and right halves
  * 
