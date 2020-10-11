@@ -21,7 +21,6 @@ function bubbleSort(arr){
     return arr;
 }
 
-
 /**
  * Swap two elements in array
  * 
